@@ -19,7 +19,7 @@ cap.set(4, height)
 folderPath = "documents/images"  # Directory where images will be stored
 pdfPath = "documents/Project_PPT_sample[1] (1).pdf"  # Path to the PDF file
 
-os.makedirs(folderPath)
+os.makedirs(folderPath, exist_ok=True)
 
 # Extract PDF pages as images
 def extract_pdf_pages(pdfPath, outputFolder):
